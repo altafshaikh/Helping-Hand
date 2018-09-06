@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% block login_active %}active{% endblock %}
+
+{% block body %}
+<div class="login-w3l">
+<div class="top-img-agileits-w3layouts">
+<h2 class="sub-head-w3-agileits">Request</h2>
+<p>Fillout the form below</p>
+<div class="login-form">
+<form method="post">
+{% csrf_token %}
+{{form.as_p }}
+<br>
+<input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+<label class="form-check-label" for="invalidCheck2">
+<p id="color">I've given correct data!</p>
+<br>
+<input type="submit" value="Submit">
+</form>
+</div>
+</div>
+</div>
+
+  <!-- form ends -->
+  <style>
+  #color{
+  color: white;
+  }
+  </style>
+
+  {% endblock %}

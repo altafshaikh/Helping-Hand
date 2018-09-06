@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block login_active %}active{% endblock %}
+
+{% block body %}
+	        <div class="login-w3l">
+			<div class="top-img-agileits-w3layouts">
+				<h2 class="sub-head-w3-agileits">Register</h2>
+				<p>Fillout the form below</p>
+				<div class="login-form">
+				<form method="post">
+					{% csrf_token %}
+					{{form.as_p }}
+          <br>
+          <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+          <label class="form-check-label" for="invalidCheck2">
+              <a href="{% url 'points:points' %}" target="_blank"> Read "Points to Remember" </a>
+          </label>
+          <br>
+					<input type="submit" value="Register">
+				</form>
+			</div>
+			</div>
+				</div>
+                <style>
+                a{
+                color: white;
+                }
+                </style>
+{% endblock %}

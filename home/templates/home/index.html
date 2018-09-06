@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+{% block login_active %}active{% endblock %}
+
+{% block body %}
+
+            <div class="row">
+                <div class="col-sm-6">
+                    <p class="text">
+                        <center> <font color="#6d6d46" size="5px"><u> About us </u></font> </center><br>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </div>
+
+                <div class="col-sm-6">
+                    <p class="text">
+                        <center> <font color="#6d6d46" size="5px"><u>Importance of Blood Donation! </u></font> </center><br>
+                        <ul>
+                            <li>A single session of blood donation can benefit as many as 4 sets of people, when divided into its various components (red blood cells, plasma, platelets and cryoprecipitate)</li>
+                            <li>A premature baby can be given a second chance with as little as 3 teaspoons of your blood.</li>
+                            <li>Someone in this world is in need of blood, every 2-5 seconds.</li>
+                            <li>American citizen, James Harris, saved 2 million babies through multiple donationsof his rare blood type.</li>
+                            <li>IrritaThere is no substitute for human blood. Therefore, all medical care depends on blood donation ability</li>
+
+                        </ul>
+                    </p>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-xs-12">
+                    <p class="lead">
+                        <center>
+                            <a href="{% url 'register:register' %}" class="btn btn-md btn-default" >Register as a Donor</a>
+                            <a href="{% url 'needblood:needblood' %}" class="btn btn-md btn-default">Request Blood</a>
+                        </center>
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="inner">
+                        <p><h4>Project by <b>Team .onion</b></h4></p>
+                    </div>
+                </div>
+            </div>
+
+
+        {% endblock %}

@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block body %}
+
+<div id="box">
+
+<h1 id="thanks">Thanks for Registering as A Doner {{user}}! You will receive An SMS if someone needs Blood in Your City!</h1>
+
+</div>
+
+
+<style>
+#box{
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+-ms-transform:translate(-50%,-50%)
+
+
+}
+#thanks{
+  text-align: center;
+  color:white;
+}
+
+</style>
+
+
+{% endblock %}

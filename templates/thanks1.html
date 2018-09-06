@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block body %}
+
+<div id="box">
+
+<h1 id="thanks">Thanks for Requesting Blood {{user}}! We Will Try Our Best To Get the Required Blood On Time.</h1>
+
+</div>
+
+
+<style>
+#box{
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+-ms-transform:translate(-50%,-50%)
+
+
+}
+#thanks{
+  text-align: center;
+  color:white;
+}
+
+</style>
+
+
+{% endblock %}

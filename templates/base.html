@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="icon" href="/static/home/images/logo002.png">
+        <title>Helping Hand</title>
+        <link href="/static/home/css/bootstrap.min.css" rel="stylesheet">
+        <link href="/static/home/css//ie10-viewport-bug-workaround.css" rel="stylesheet">
+        <link href="/static/home/css/cover.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+        <script src="/static/home/js/ie-emulation-modes-warning.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Concert+One|Lobster" rel="stylesheet">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <!-- <meta name="keywords" content="Curved Contact Form template Responsive, Login form web template,Flat Pricing tables,Flat Drop downs Sign up Web Templates,
+        Flat Web Templates, Login sign up Responsive web template, SmartPhone Compatible web template, free web designs for Nokia, Samsung, LG, SonyEricsson, Motorola web design"> -->
+        <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <!-- Custom Theme files -->
+        <link href="/static/home/css/style_contactus.css" rel='stylesheet' type='text/css' />
+        <!-- <link href="/static/home/css/bootstrap.css" rel='stylesheet' type='text/css' /> -->
+        <!--fonts-->
+        <link href="//fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800" rel="stylesheet">
+        <!--//fonts-->
+
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="row hbgcolor">
+                <div id="logo" class="col-sm-2 col-md-2 col-xs-2"><img src="/static/home/images/logo003.png" height="125px" width="125px" margin-left="auto" margin-right="auto"></div>
+                <div id="head" class="col-sm-6 col-md-6 col-xs-6 main_title">
+                    <p class="header_blood">
+                        HELPING HAND
+                        <p style="font-family: 'Lobster', cursive; font-size: 30px;"> An SMS is saving lives by arranging blood in time!!</p>
+                    </p>
+                </div>
+                <div id="twitter"class="col-sm-2 col-md-2 col-xs-2">
+                    <font size="100px"><a href="https://twitter.com/hashtag/bloodinthecity?src=hash"><i class="fab fa-twitter" size="7x"></i></a></font>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-xs-12">
+                    <nav>
+                        <ul class="nav masthead-nav">
+                            <li class="active"><a href="{% url 'home:index' %}">Home</a></li>
+                            <li><a href="{% url 'info:info' %}"><font color="#ffffff">Information</font></a></li>
+                            <li><a href="{% url 'points:points' %}"><font color="#ffffff">Point to Remember</font></a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+            {% block body %}
+            {% endblock %}
+
+
+
+                <!-- Bootstrap core JavaScript
+                ================================================== -->
+                <!-- Placed at the end of the document so the pages load faster -->
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+                <script>window.jQuery || document.write('<script src="/static/home/js/jquery.min.js"><\/script>')</script>
+                <script src="/static/home/js/bootstrap.min.js"></script>
+                <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+                <script src="/static/home/js/ie10-viewport-bug-workaround.js"></script>
+              </body>
+            </html>
